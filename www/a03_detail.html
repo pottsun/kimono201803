@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="format-detection" content="telephone=no" />
+<title>a03_detail</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<style type="text/css">
+.flickableControl{margin: 0;}
+#Footer{padding-top: 0;}
+</style>
+<script type="text/javascript" src="javascript/monaca.viewport.js"></script>
+<script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="javascript/loader.js"></script>
+<script type="text/javascript" src="javascript/pack2014.js"></script>
+<script type="text/javascript" src="javascript/flick_slide.js"></script>
+<script type="text/javascript">
+/*if( monaca.isIOS ){
+window.StatusBar.statusBarStyleDefault();
+};*/
+
+$(window).load(function() {
+    var WH = $(window).height();
+    var BH = $('body').height();
+    if(BH<WH){
+		$('body').css('height',WH-20);
+		$('#menu ul').css('height',WH);
+	}
+	
+	$('body').append('<div id="closeBtn"><img src="img/close.gif"></div>');
+	
+	$('.detailImage img').click(function(){
+		var URL = $(this).attr('src');
+		$('#zoomHanger img').attr('src',URL);
+		$('#zoomHanger,#closeBtn').css('display','block');
+	});	
+	$('#zoomHanger,#closeBtn').click(function(){
+		$('#zoomHanger,#closeBtn').css('display','none');
+	});
+});
+</script>
+</head> 
+<body>
+
+<!-- heaader -->
+<div id="header">
+	<ul>
+    	<li><a href="index.html" class="home2">ホーム</a></li>
+        <li><a href="index-a.html" class="passed">ふるるん 長襦袢</a></li>
+        <li><a href="a03.html">秋冬襦袢 綸子 紗綾形</a></li>
+    </ul>
+    <div id="sampleBtn"><img src="img/sample.png" alt="サンプル申し込み"></div>
+</div>
+<!--/ heaader /-->
+
+<div id="basic" class="flickSimple detailPage">
+<ul class="detailPage">
+	<li class="clearFix" id="01">
+    	<div class="detailName">WS26-1<br>ぼかし水玉<span>紫<br><br>絹　100％<br>手ぼかし染/他<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""><br><br>お仕立て時、お客様からのご指示が特にない場合は、袖振り側にぼかしがくるようにお仕立てさせていただきます。</span></div>
+		<div class="detailImage"><img src="img/WS26-1.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="02">
+    	<div class="detailName">WS26-3<br>ぼかし水玉<span>クリーム<br><br>絹　100％<br>手ぼかし染/他<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""><br><br>お仕立て時、お客様からのご指示が特にない場合は、袖振り側にぼかしがくるようにお仕立てさせていただきます。</span></div>
+		<div class="detailImage"><img src="img/WS26-3.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="03">
+    	<div class="detailName">WS00-0<br>無地<span>白<br><br>絹　100％<br>製織地　中国<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/WS00-0.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="04">
+    	<div class="detailName">WS27-4<br>無地<span>薄水色<br><br>絹　100％<br>浸染<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/WS27-4.jpg" alt=""></div>
+    </li>
+</ul>
+</div>
+
+<div class="flickableControl clearFix">
+<a id="prev" class="backbtn"><img src="img/prev.png" alt="PREV" height="46"></a>
+<a id="next" class="nextbtn"><img src="img/next.png" alt="NEXT" height="46"></a>
+</div>
+<div id="thumbNail"></div>
+<div class="clear"></div>
+<div id="Footer">●実際の商品の色や柄の出方はカタログの写真と異なることがありますのでご了承ください。</div>
+
+<div id="zoomHanger"><img src="img/WS26-1.jpg" alt=""></div>
+
+</body>
+</html>

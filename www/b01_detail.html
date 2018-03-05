@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="format-detection" content="telephone=no" />
+<title>b01_detail</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<style type="text/css">
+.flickableControl{margin: 0;}
+#Footer{padding-top: 0;}
+</style>
+<script type="text/javascript" src="javascript/monaca.viewport.js"></script>
+<script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="javascript/loader.js"></script>
+<script type="text/javascript" src="javascript/pack2014.js"></script>
+<script type="text/javascript" src="javascript/flick_slide.js"></script>
+<script type="text/javascript">
+/*if( monaca.isIOS ){
+window.StatusBar.statusBarStyleDefault();
+};*/
+
+$(window).load(function() {
+    var WH = $(window).height();
+    var BH = $('body').height();
+    if(BH<WH){
+		$('body').css('height',WH-20);
+		$('#menu ul').css('height',WH);
+	}
+	
+	$('body').append('<div id="closeBtn"><img src="img/close.gif"></div>');
+	
+	$('.detailImage img').click(function(){
+		var URL = $(this).attr('src');
+		$('#zoomHanger img').attr('src',URL);
+		$('#zoomHanger,#closeBtn').css('display','block');
+	});	
+	$('#zoomHanger,#closeBtn').click(function(){
+		$('#zoomHanger,#closeBtn').css('display','none');
+	});
+});
+</script>
+</head> 
+<body>
+
+<!-- heaader -->
+<div id="header">
+	<ul>
+    	<li><a href="index.html" class="home2">ホーム</a></li>
+        <li><a href="index-b.html" class="passed">ふるるん きもの</a></li>
+        <li><a href="b01.html">夏 小紋 鮫</a></li>
+    </ul>
+    <div id="sampleBtn"><img src="img/sample.png" alt="サンプル申し込み"></div>
+</div>
+<!--/ heaader /-->
+
+<div id="basic" class="flickSimple detailPage">
+<ul class="detailPage">
+	<li class="clearFix" id="01">
+    	<div class="detailName">70019665<br>駒絽三越<br>鮫小紋<span>薄茶<br><br>絹　100％<br>ロール捺染<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/70019665.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="02">
+    	<div class="detailName">70019666<br>駒絽三越<br>鮫小紋<span>藤<br><br>絹　100％<br>ロール捺染<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/70019666.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="03">
+    	<div class="detailName">700196676<br>駒絽三越<br>鮫小紋<span>薄紫<br><br>絹　100％<br>ロール捺染<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/70019667.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="04">
+    	<div class="detailName">70019668<br>駒絽三越<br>鮫小紋<span>青<br><br>絹　100％<br>ロール捺染<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/70019668.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="05">
+    	<div class="detailName">70019669<br>駒絽三越<br>鮫小紋<span>紫<br><br>絹　100％<br>ロール捺染<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/70019669.jpg" alt=""></div>
+    </li>
+</ul>
+</div>
+
+<div class="flickableControl clearFix">
+<a id="prev" class="backbtn"><img src="img/prev.png" alt="PREV" height="46"></a>
+<a id="next" class="nextbtn"><img src="img/next.png" alt="NEXT" height="46"></a>
+</div>
+<div id="thumbNail"></div>
+<div class="clear"></div>
+<div id="Footer">●実際の商品の色や柄の出方はカタログの写真と異なることがありますのでご了承ください。</div>
+
+<div id="zoomHanger"><img src="img/70019665.jpg" alt=""></div>
+
+</body>
+</html>

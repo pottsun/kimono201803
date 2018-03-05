@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="format-detection" content="telephone=no" />
+<title>b03_detail</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<style type="text/css">
+.flickableControl{margin: 0;}
+#Footer{padding-top: 0;}
+</style>
+<script type="text/javascript" src="javascript/monaca.viewport.js"></script>
+<script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="javascript/loader.js"></script>
+<script type="text/javascript" src="javascript/pack2014.js"></script>
+<script type="text/javascript" src="javascript/flick_slide.js"></script>
+<script type="text/javascript">
+/*if( monaca.isIOS ){
+window.StatusBar.statusBarStyleDefault();
+};*/
+
+$(window).load(function() {
+    var WH = $(window).height();
+    var BH = $('body').height();
+    if(BH<WH){
+		$('body').css('height',WH-20);
+		$('#menu ul').css('height',WH);
+	}
+	
+	$('body').append('<div id="closeBtn"><img src="img/close.gif"></div>');
+	
+	$('.detailImage img').click(function(){
+		var URL = $(this).attr('src');
+		$('#zoomHanger img').attr('src',URL);
+		$('#zoomHanger,#closeBtn').css('display','block');
+	});	
+	$('#zoomHanger,#closeBtn').click(function(){
+		$('#zoomHanger,#closeBtn').css('display','none');
+	});
+});
+</script>
+</head> 
+<body>
+
+<!-- heaader -->
+<div id="header">
+	<ul>
+    	<li><a href="index.html" class="home2">ホーム</a></li>
+        <li><a href="index-b.html" class="passed">ふるるん きもの</a></li>
+        <li><a href="b03.html">夏 色無地</a></li>
+    </ul>
+    <div id="sampleBtn"><img src="img/sample.png" alt="サンプル申し込み"></div>
+</div>
+<!--/ heaader /-->
+
+<div id="basic" class="flickSimple detailPage">
+<ul class="detailPage">
+	<li class="clearFix" id="01">
+    	<div class="detailName">70019598<br>駒絽五越<span>若草色<br><br>絹　100％<br>引染<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/70019598.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="02">
+    	<div class="detailName">70019599<br>駒絽五越<span>銀鼠<br><br>絹　100％<br>引染<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/70019599.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="03">
+    	<div class="detailName">70019600<br>駒絽五越<span>薄灰赤紫<br><br>絹　100％<br>引染<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/70019600.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="04">
+    	<div class="detailName">70019603<br>駒絽五越<span>水色<br><br>絹　100％<br>引染<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/70019603.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="05">
+    	<div class="detailName">70019604<br>駒絽五越<span>薄茶<br><br>絹　100％<br>引染<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/70019604.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="06">
+    	<div class="detailName">70019606<br>駒絽五越<span>薄灰<br><br>絹　100％<br>引染<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/70019606.jpg" alt=""></div>
+    </li>
+</ul>
+</div>
+
+<div class="flickableControl clearFix">
+<a id="prev" class="backbtn"><img src="img/prev.png" alt="PREV" height="46"></a>
+<a id="next" class="nextbtn"><img src="img/next.png" alt="NEXT" height="46"></a>
+</div>
+<div id="thumbNail"></div>
+<div class="clear"></div>
+<div id="Footer">●実際の商品の色や柄の出方はカタログの写真と異なることがありますのでご了承ください。</div>
+
+<div id="zoomHanger"><img src="img/70019598.jpg" alt=""></div>
+
+</body>
+</html>

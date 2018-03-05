@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="format-detection" content="telephone=no" />
+<title>c03_detail</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<style type="text/css">
+.flickableControl{margin: 0;}
+#Footer{padding-top: 0;}
+</style>
+<script type="text/javascript" src="javascript/monaca.viewport.js"></script>
+<script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="javascript/loader.js"></script>
+<script type="text/javascript" src="javascript/pack2014.js"></script>
+<script type="text/javascript" src="javascript/flick_slide.js"></script>
+<script type="text/javascript">
+/*if( monaca.isIOS ){
+window.StatusBar.statusBarStyleDefault();
+};*/
+
+$(window).load(function() {
+    var WH = $(window).height();
+    var BH = $('body').height();
+    if(BH<WH){
+		$('body').css('height',WH-20);
+		$('#menu ul').css('height',WH);
+	}
+	
+	$('body').append('<div id="closeBtn"><img src="img/close.gif"></div>');
+	
+	$('.detailImage img').click(function(){
+		var URL = $(this).attr('src');
+		$('#zoomHanger img').attr('src',URL);
+		$('#zoomHanger,#closeBtn').css('display','block');
+	});	
+	$('#zoomHanger,#closeBtn').click(function(){
+		$('#zoomHanger,#closeBtn').css('display','none');
+	});
+});
+</script>
+</head> 
+<body>
+
+<!-- heaader -->
+<div id="header">
+	<ul>
+    	<li><a href="index.html" class="home2">ホーム</a></li>
+        <li><a href="index-c.html?01" class="passed">女物 裏地・付属品</a></li>
+        <li><a href="c12.html">柄八掛</a></li>
+    </ul>
+    <div id="sampleBtn"><img src="img/sample.png" alt="サンプル申し込み"></div>
+</div>
+<!--/ heaader /-->
+
+<div id="basic" class="flickSimple detailPage">
+<ul class="detailPage">
+	<li class="clearFix" id="01">
+    	<div class="detailName">8101 精華パレス<br>8201 紬<span><br>絹　100％<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/8101.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="02">
+    	<div class="detailName">8102 精華パレス<br>8202 紬<span><br>絹　100％<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/8102.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="03">
+    	<div class="detailName">8103 精華パレス<br>8203 紬<span><br>絹　100％<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/8103.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="04">
+    	<div class="detailName">8104 精華パレス<br>8204 紬<span><br>絹　100％<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/8104.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="05">
+    	<div class="detailName">8105 精華パレス<br>8205 紬<span><br>絹　100％<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/8105.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="06">
+    	<div class="detailName">8106 精華パレス<br>8206 紬<span><br>絹　100％<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/8106.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="07">
+    	<div class="detailName">8107 精華パレス<br>8207 紬<span><br>絹　100％<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/8107.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="08">
+    	<div class="detailName">8108 精華パレス<br>8208 紬<span><br>絹　100％<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/8108.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="09">
+    	<div class="detailName">8109 精華パレス<br>8209 紬<span><br>絹　100％<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/8109.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="010">
+    	<div class="detailName">8110 精華パレス<br>8210 紬<span><br>絹　100％<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/8110.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="011">
+    	<div class="detailName">8111 精華パレス<br>8211 紬<span><br>絹　100％<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/8111.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="012">
+    	<div class="detailName">8112 精華パレス<br>8212 紬<span><br>絹　100％<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/8112.jpg" alt=""></div>
+    </li>
+</ul>
+</div>
+
+<div class="flickableControl clearFix">
+<a id="prev" class="backbtn"><img src="img/prev.png" alt="PREV" height="46"></a>
+<a id="next" class="nextbtn"><img src="img/next.png" alt="NEXT" height="46"></a>
+</div>
+<div id="thumbNail"></div>
+<div class="clear"></div>
+<div id="Footer">●実際の商品の色や柄の出方はカタログの写真と異なることがありますのでご了承ください。</div>
+
+<div id="zoomHanger"><img src="img/3001.jpg" alt=""></div>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+	padding: 0;
+}
+
+#Wrapper{
+	width: 1024px;
+	height: 748px;
+	margin: 20px auto 0 auto;
+	padding: 0;
+    overflow: hidden;
+}
+
+h1{
+	margin: 0 0 0 20px;
+	padding: 0;
+	position: absolute;
+	top: 40px;
+	z-index: 100;
+}
+
+img{border: none;}
+
+.clear{
+ width: 0;
+ height: 0;
+ margin: 0;
+ padding: 0;
+ font-size: 0;
+ line-height: 0;
+ clear: both;
+}
+
+#photoHanger{
+	margin: 20px 0 0 0;
+	padding: 0;
+}
+
+#photoHanger ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#photoHanger ul li{
+    width: 1024px;
+    height: 748px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 20px;
+	filter:alpha(opacity=0);
+	-moz-opacity: 0;
+	opacity: 0;
+    overflow: hidden;
+    /*text-indent: -9999px;*/
+}
+
+/*#photoHanger ul li.photo1{background:url(../img/index/image1.jpg) no-repeat 0 0;}
+#photoHanger ul li.photo2{background:url(../img/index/image2.jpg) no-repeat 0 0;}
+#photoHanger ul li.photo3{background:url(../img/index/image3.jpg) no-repeat 0 0;}
+#photoHanger ul li.photo4{background:url(../img/index/image4.jpg) no-repeat 0 0;}*/
+
+#NaviHanger{
+	margin: 0;
+	padding: 0 0 0 729px;
+	position: absolute;
+	top: 85px;
+	text-align: right;
+}
+
+#NaviHanger img{width: 295px;}
+
+#appLinks{
+    margin: 0 0 0 20px;
+	padding: 10px;
+	position: absolute;
+	font-size: 0.8em;
+	top: 500px;
+	background-color:rgba(255,255,255,0.8);
+	display: none;
+}
+
+#appLinks img{margin: 5px 5px 0 0;}
+
+#Copyright{
+    margin: 0 0 0 20px;
+	padding: 10px;
+	position: absolute;
+	font-size: 0.8em;
+	top: 710px;
+	background-color:rgba(0,0,0,0.8);
+	color: #FFFFFF;
+}
+
+#Copyright a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.noLink{
+    filter:alpha(opacity=40);
+	-moz-opacity: 0.4;
+	opacity: 0.4;
+}
+
+#overLayer{
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	filter:alpha(opacity=85);
+	-moz-opacity: 0.85;
+	opacity: 0.85;
+	_position: absolute;
+}
+
+#passWord{
+	width: 250px;
+	margin: 0;
+	padding: 10px;
+	-moz-border-radius: 0.4em;
+	-webkit-border-radius: 0.4em;
+	-o-border-radius: 0.4em;
+	-ms-border-radius: 0.4em;
+	border-radius: 0.4em;
+	background-color: #FFFFFF;
+	position: absolute;
+	font-size: 0.8em;
+}
+
+#passWord span{
+	display: block;
+	text-align: center;
+}
+
+.Alert{
+    margin: 0;
+	padding: 0 10px;
+	color: #CC0000;
+	text-align: center;
+	font-weight: bold;
+}
+
+#passWord input{
+	width: 230px;
+	margin: 5px 0 0 5px;
+}
+
+#passWord span.Btn{
+	margin: 10px 0 0 0;
+	padding: 5px;
+}
+
+#passWord span.Btn a{
+	margin: 0;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #000000;
+	background-color: #E8E8E8;
+	border: 1px solid #CCCCCC;
+	cursor: pointer;
+}
+
+#Ver{
+    margin: 0 20px 0 905px;
+	padding: 10px;
+	position: absolute;
+	font-size: 0.8em;
+	top: 710px;
+	background-color:rgba(0,0,0,0.8);
+	color: #FFFFFF;
+}

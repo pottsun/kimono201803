@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="format-detection" content="telephone=no" />
+<title>海外縫製</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="javascript/monaca.viewport.js"></script>
+<script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="javascript/loader.js"></script>
+<script type="text/javascript" src="javascript/pack2014.js"></script>
+<script type="text/javascript" src="javascript/flick_slide.js"></script>
+<script type="text/javascript">
+/*if( monaca.isIOS ){
+window.StatusBar.statusBarStyleDefault();
+};*/
+$(window).load(function() {
+    var WH = $(window).height();
+    var BH = $('body').height();
+    if(BH<WH){
+		$('body').css('height',WH-50);
+		$('#menu ul').css('height',WH);
+	}
+	
+	/*$('#menuBtn span').click(function(){
+		var Class = $(this).attr('class');
+		if(Class=='open'){
+			$(this).removeClass('open');
+			$('#menu').stop().animate({left:-250},250);
+			$('#header,#wrapper').stop().animate({left:0},250);
+		}else{
+			$(this).addClass('open');
+			$('#menu,#header,#wrapper').stop().animate({left:0},250);
+			$('#header,#wrapper').stop().animate({left:250},250);
+		}
+	});*/
+	
+});
+</script>
+</head> 
+<body>
+
+<!-- heaader -->
+<div id="header">
+	<ul>
+    	<li><a href="index.html" class="home2">ホーム</a></li>
+        <li><a href="index-f.html">仕立て</a></li>
+        <li><span>縫製（国内・海外）</span></li>
+    </ul>
+</div>
+<!--/ heaader /-->
+
+<h2><img src="img/cate-f/f01/title.png" alt="縫製（国内・海外）" height="85"></h2>
+
+<div id="contHanger">
+
+	<p><img src="img/cate-f/f01/image1.jpg" alt="" width="250" class="floatLeft"><strong>■海外縫製</strong><br>直営工場（ベトナム・ホーチミン市）は日本人スタッフがきめ細かに管理しているから安心。<br>・徹底された品質管理で高い技術力を実現<br>・システム化された納期管理<br>・工場内も日本的な躾で、常に清潔な環境<br>　⇒年間88,000点を縫製（2014年実績）<br><br><strong>■国内縫製</strong><br>高い技術力を持った日本各地の縫子と提携。<br>・短納期への対応<br>・国内手縫いとしてのブランドを維持<br clear="all"></p>
+    
+  	<p class="style1">海外縫製・国内縫製ともに安定した品質を指定された納期に確実にお届けさせて頂きます。</p>
+    
+</div>
+
+<div class="flickableControl">
+	<div id="back"><a href="index-f.html"><img src="img/prev.png" alt="PREV" height="46"></a></div>
+</div>
+<div id="Footer">●実際の商品の色や柄の出方はカタログの写真と異なることがありますのでご了承ください。</div>
+
+
+</body>
+</html>

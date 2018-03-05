@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" id="kimono.catalog" version="1.0.5">
+  <name>総合カタログ</name>
+  <description/>
+  <author/>
+  <access origin="http://www.hokuto-com.co.jp/*"/>
+  <preference name="loglevel" value="ERROR"/>
+  <preference name="keepRunning" value="true"/>
+  <feature name="App">
+    <param name="android-package" value="org.apache.cordova.App"/>
+  </feature>
+  <feature name="Geolocation">
+    <param name="android-package" value="org.apache.cordova.GeoBroker"/>
+  </feature>
+  <feature name="Device">
+    <param name="android-package" value="org.apache.cordova.Device"/>
+  </feature>
+  <feature name="Accelerometer">
+    <param name="android-package" value="org.apache.cordova.AccelListener"/>
+  </feature>
+  <feature name="Compass">
+    <param name="android-package" value="org.apache.cordova.CompassListener"/>
+  </feature>
+  <feature name="Media">
+    <param name="android-package" value="org.apache.cordova.AudioHandler"/>
+  </feature>
+  <feature name="Camera">
+    <param name="android-package" value="org.apache.cordova.CameraLauncher"/>
+  </feature>
+  <feature name="Contacts">
+    <param name="android-package" value="org.apache.cordova.ContactManager"/>
+  </feature>
+  <feature name="File">
+    <param name="android-package" value="org.apache.cordova.FileUtils"/>
+  </feature>
+  <feature name="NetworkStatus">
+    <param name="android-package" value="org.apache.cordova.NetworkManager"/>
+  </feature>
+  <feature name="Notification">
+    <param name="android-package" value="org.apache.cordova.Notification"/>
+  </feature>
+  <feature name="Storage">
+    <param name="android-package" value="org.apache.cordova.Storage"/>
+  </feature>
+  <feature name="FileTransfer">
+    <param name="android-package" value="org.apache.cordova.FileTransfer"/>
+  </feature>
+  <feature name="Capture">
+    <param name="android-package" value="org.apache.cordova.Capture"/>
+  </feature>
+  <feature name="Battery">
+    <param name="android-package" value="org.apache.cordova.BatteryListener"/>
+  </feature>
+  <feature name="SplashScreen">
+    <param name="android-package" value="org.apache.cordova.SplashScreen"/>
+  </feature>
+  <feature name="Echo">
+    <param name="android-package" value="org.apache.cordova.Echo"/>
+  </feature>
+  <feature name="Globalization">
+    <param name="android-package" value="org.apache.cordova.Globalization"/>
+  </feature>
+  <feature name="InAppBrowser">
+    <param name="android-package" value="org.apache.cordova.InAppBrowser"/>
+  </feature>
+  <feature name="mobi.monaca.nativecomponent">
+    <param name="android-package" value="mobi.monaca.framework.plugin.MonacaNativeUIPlugin"/>
+  </feature>
+  <feature name="Transit">
+    <param name="android-package" value="mobi.monaca.framework.plugin.MonacaTransitPlugin"/>
+  </feature>
+  <feature name="MonacaSplashScreen">
+    <param name="android-package" value="mobi.monaca.framework.plugin.MonacaSplashPlugin"/>
+  </feature>
+  <preference name="monaca:DisableCookie" value="false"/>
+  <preference name="monaca:ExtractAssets" value="true"/>
+  <preference name="monaca:androidVersionCode" value="6"/>
+  <preference name="Fullscreen" value="false"/>
+  <preference name="SplashScreenDelay" value="1000"/>
+  <preference name="Orientation" value="default"/>
+  <allow-intent href="itms:*"/>
+  <allow-intent href="itms-apps:*"/>
+  <allow-navigation href="*"/>
+  <preference name="FadeSplashScreenDuration" value="0"/>
+</widget>

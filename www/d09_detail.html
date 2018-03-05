@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="format-detection" content="telephone=no" />
+<title>d09_detail</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<style type="text/css">
+.flickableControl{margin: 0;}
+#Footer{padding-top: 0;}
+</style>
+<script type="text/javascript" src="javascript/monaca.viewport.js"></script>
+<script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="javascript/loader.js"></script>
+<script type="text/javascript" src="javascript/pack2014.js"></script>
+<script type="text/javascript" src="javascript/flick_slide.js"></script>
+<script type="text/javascript">
+/*if( monaca.isIOS ){
+window.StatusBar.statusBarStyleDefault();
+};*/
+
+$(window).load(function() {
+    var WH = $(window).height();
+    var BH = $('body').height();
+    if(BH<WH){
+		$('body').css('height',WH-20);
+		$('#menu ul').css('height',WH);
+	}
+	
+	$('body').append('<div id="closeBtn"><img src="img/close.gif"></div>');
+	
+	$('.detailImage img').click(function(){
+		var URL = $(this).attr('src');
+		$('#zoomHanger img').attr('src',URL);
+		$('#zoomHanger,#closeBtn').css('display','block');
+	});	
+	$('#zoomHanger,#closeBtn').click(function(){
+		$('#zoomHanger,#closeBtn').css('display','none');
+	});
+});
+</script>
+</head> 
+<body>
+
+<!-- heaader -->
+<div id="header">
+	<ul>
+    	<li><a href="index.html" class="home2">ホーム</a></li>
+        <li><a href="index-d.html" class="passed">男物 裏地・付属品・襦袢</a></li>
+        <li><a href="d09.html">男物羽裏</a></li>
+    </ul>
+    <div id="sampleBtn"><img src="img/sample.png" alt="サンプル申し込み"></div>
+</div>
+<!--/ heaader /-->
+
+<div id="basic" class="flickSimple detailPage">
+<ul class="detailPage">
+	<li class="clearFix" id="01">
+    	<div class="detailName">6106<br>縞格子<span>グレー<br><br>絹　100％<br>生地巾約40cm<br>ロール捺染<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/5106.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="02">
+    	<div class="detailName">6107<br>風神雷神<span>灰<br><br>絹　100％<br>生地巾約40cm<br>板場糊友禅<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/5107.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="03">
+    	<div class="detailName">6108<br>だるま<span>ブルー<br><br>絹　100％<br>生地巾約40cm<br>摺友禅染<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/5108.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="04">
+    	<div class="detailName">6109<br>鳥獣戯画<span>茶<br><br>絹　100％<br>生地巾約40cm<br>摺友禅染<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/5109.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="05">
+    	<div class="detailName">6110<br>シケ引き<span>グリーン系<br><br>絹　100％<br>生地巾約40cm<br>シケ引きぼかし染<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/5110.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="06">
+    	<div class="detailName">6112<br>ドクロ<span>薄グレー<br><br>絹　100％<br>生地巾約40cm<br>板場糊友禅<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/5112.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="07">
+    	<div class="detailName">6113<br>ウロコ小<span>茶<br><br>絹　100％<br>生地巾約40cm<br>ロール捺染<br>製織地　中国<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/5113.jpg" alt=""></div>
+    </li>
+</ul>
+</div>
+
+<div class="flickableControl clearFix">
+<a id="prev" class="backbtn"><img src="img/prev.png" alt="PREV" height="46"></a>
+<a id="next" class="nextbtn"><img src="img/next.png" alt="NEXT" height="46"></a>
+</div>
+<div id="thumbNail"></div>
+<div class="clear"></div>
+<div id="Footer">●実際の商品の色や柄の出方はカタログの写真と異なることがありますのでご了承ください。</div>
+
+<div id="zoomHanger"><img src="img/5106.jpg" alt=""></div>
+
+</body>
+</html>

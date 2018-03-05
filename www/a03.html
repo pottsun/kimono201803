@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="format-detection" content="telephone=no" />
+<title>商品一覧 ―綸子 紗綾形―</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<style>
+.Hanger{margin: 5px 11px;}
+</style>
+<script type="text/javascript" src="javascript/monaca.viewport.js"></script>
+<script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="javascript/loader.js"></script>
+<script type="text/javascript" src="javascript/pack2014.js"></script>
+<!--<script type="text/javascript" src="javascript/flick_slide.js"></script>-->
+<script type="text/javascript">
+/*if( monaca.isIOS ){
+window.StatusBar.statusBarStyleDefault();
+};*/
+$(window).load(function() {
+    var WH = $(window).height();
+    var BH = $('body').height();
+    if(BH<WH){
+		$('body').css('height',WH-50);
+		$('#menu ul').css('height',WH);
+	}
+	
+	/*$('#menuBtn span').click(function(){
+		var Class = $(this).attr('class');
+		if(Class=='open'){
+			$(this).removeClass('open');
+			$('#menu').stop().animate({left:-250},250);
+			$('#header,#wrapper').stop().animate({left:0},250);
+		}else{
+			$(this).addClass('open');
+			$('#menu,#header,#wrapper').stop().animate({left:0},250);
+			$('#header,#wrapper').stop().animate({left:250},250);
+		}
+	});*/
+	
+});
+</script>
+</head> 
+<body>
+
+<!-- heaader -->
+<div id="header">
+	<ul>
+    	<li><a href="index.html" class="home2">ホーム</a></li>
+        <li><a href="index-a.html">ふるるん 長襦袢</a></li>
+        <li><span>秋冬襦袢 綸子 紗綾形</span></li>
+    </ul>
+</div>
+<!--/ heaader /-->
+
+<h2><img src="img/cate-a/a03/title.png" alt="商品一覧 ―綸子 紗綾形―" height="85"></h2>
+
+<div id="basic" class="flickSimple">
+<ul>
+<li>
+    <div class="Hanger">
+       <a href="a03_detail.html?01"><dl>
+           <dt><img src="img/cate-a/a03/thumb1.jpg"></dt>
+           <dd>WS26-1<br />ぼかし水玉<span>紫</span><br><br></dd>
+       </dl></a>
+    </div>
+    <div class="Hanger">
+       <a href="a03_detail.html?02"><dl>
+           <dt><img src="img/cate-a/a03/thumb3.jpg"></dt>
+           <dd>WS26-3<br />ぼかし水玉<span>クリーム</span><br><br></dd>
+       </dl></a>
+    </div>
+    <div class="Hanger">
+       <a href="a03_detail.html?03"><dl>
+           <dt><img src="img/cate-a/a03/thumb4.jpg"></dt>
+           <dd>WS00-0<br />無地<span>白</span><br><br></dd>
+       </dl></a>
+    </div>
+    <div class="Hanger">
+       <a href="a03_detail.html?04"><dl>
+           <dt><img src="img/cate-a/a03/thumb5.jpg"></dt>
+           <dd>WS27-4<br />無地<span>薄水色</span><br><br></dd>
+       </dl></a>
+    </div>
+</li>
+</ul>
+</div>
+
+<div class="flickableControl">
+	<div id="back"><a href="index-a.html"><img src="img/prev.png" alt="PREV" height="46"></a></div>
+</div>
+<div id="Footer">●実際の商品の色や柄の出方はカタログの写真と異なることがありますのでご了承ください。</div>
+
+
+</body>
+</html>

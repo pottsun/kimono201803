@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="format-detection" content="telephone=no" />
+<title>c01_detail</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<style type="text/css">
+.flickableControl{margin: 0;}
+#Footer{padding-top: 0;}
+</style>
+<script type="text/javascript" src="javascript/monaca.viewport.js"></script>
+<script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="javascript/loader.js"></script>
+<script type="text/javascript" src="javascript/pack2014.js"></script>
+<script type="text/javascript" src="javascript/flick_slide.js"></script>
+<script type="text/javascript">
+/*if( monaca.isIOS ){
+window.StatusBar.statusBarStyleDefault();
+};*/
+
+$(window).load(function() {
+    var WH = $(window).height();
+    var BH = $('body').height();
+    if(BH<WH){
+		$('body').css('height',WH-20);
+		$('#menu ul').css('height',WH);
+	}
+	
+	$('body').append('<div id="closeBtn"><img src="img/close.gif"></div>');
+	
+	$('.detailImage img').click(function(){
+		var URL = $(this).attr('src');
+		$('#zoomHanger img').attr('src',URL);
+		$('#zoomHanger,#closeBtn').css('display','block');
+	});	
+	$('#zoomHanger,#closeBtn').click(function(){
+		$('#zoomHanger,#closeBtn').css('display','none');
+	});
+});
+</script>
+</head> 
+<body>
+
+<!-- heaader -->
+<div id="header">
+	<ul>
+    	<li><a href="index.html" class="home2">ホーム</a></li>
+        <li><a href="index-c.html" class="passed">女物 裏地・付属品</a></li>
+        <li><a href="c01.html">羽裏（長尺／並尺）</a></li>
+    </ul>
+    <!--<div id="backBtn"><a href="javascript:history.back();"><img src="img/back.png" alt="戻る"></a></div>-->
+    <!--<div id="sampleBtn"><img src="img/sample.png" alt="サンプル申し込み"></div>-->
+</div>
+<!--/ heaader /-->
+
+<div id="basic" class="flickSimple detailPage">
+<ul class="detailPage">
+	<li class="clearFix" id="01">
+    	<div class="detailName">2321 長尺／1321 並尺<br>かすみ<span>パープル<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2321.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="02">
+    	<div class="detailName">2322 長尺／1322 並尺<br>かすみ<span>オレンジ<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2322.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="03">
+    	<div class="detailName">2323 長尺／1323 並尺<br>かすみ<span>ブルー<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2323.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="04">
+    	<div class="detailName">2324 長尺／1324 並尺<br>たて4色ぼかし<span>グレー<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2324.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="05">
+    	<div class="detailName">2325 長尺／1325 並尺<br>たて4色ぼかし<span>クリーム<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2325.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="06">
+    	<div class="detailName">2326 長尺／1326 並尺<br>たて4色ぼかし<span>薄紫<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2326.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="07">
+    	<div class="detailName">2327 長尺／1327 並尺<br>斜めライン<span>ピンク<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2327.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="08">
+    	<div class="detailName">2328 長尺／1328 並尺<br>斜めライン<span>ブルー<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2328.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="09">
+    	<div class="detailName">2329 長尺／1329 並尺<br>斜めライン<span>イエロー<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2329.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="010">
+    	<div class="detailName">2330 長尺／1330 並尺<br>散らし梅<span>ピンク<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2330.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="011">
+    	<div class="detailName">2331 長尺／1331 並尺<br>散らし梅<span>ブルー<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2331.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="012">
+    	<div class="detailName">2332 長尺／1332 並尺<br>散らし梅<span>イエロー<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2332.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="013">
+    	<div class="detailName">2333 長尺／1333 並尺<br>たたみ絞り<span>パープル<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2333.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="014">
+    	<div class="detailName">2334 長尺／1334 並尺<br>たたみ絞り<span>オレンジ<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2334.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="015">
+    	<div class="detailName">2335 長尺／1335 並尺<br>たたみ絞り<span>ブルー<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2335.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="016">
+    	<div class="detailName">2336 長尺／1336 並尺<br>濡れ描　たて縞<span>黒<br><br>絹　100％<br>濡れ描ぼかし染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2336.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="017">
+    	<div class="detailName">2337 長尺／1337 並尺<br>濡れ描　たて縞<span>紫<br><br>絹　100％<br>濡れ描ぼかし染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2337.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="018">
+    	<div class="detailName">2338 長尺／1338 並尺<br>濡れ描　チェック<span>ボルドー<br><br>絹　100％<br>濡れ描ぼかし染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2338.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="019">
+    	<div class="detailName">2339 長尺／1339 並尺<br>楽器<span>白<br><br>絹　100％<br>摺友禅<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2339.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="020">
+    	<div class="detailName">2340 長尺／1340 並尺<br>墨描　竹<span>白<br><br>絹　100％<br>手描染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2340.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="021">
+    	<div class="detailName">2341 長尺／1341 並尺<br>墨描　花<span>白<br><br>絹　100％<br>手描染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2341.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="022">
+    	<div class="detailName">2342 長尺／1342 並尺<br>葵に橘<span>薄パープル<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2342.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="023">
+    	<div class="detailName">2343 長尺／1343 並尺<br>葵に橘<span>薄ブルー<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2343.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="024">
+    	<div class="detailName">2344 長尺／1344 並尺<br>葵に橘<span>薄グリーン<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2344.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="025">
+    	<div class="detailName">2345 長尺／1345 並尺<br>斜めボーダー<span>ピンク<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2345.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="026">
+    	<div class="detailName">2346 長尺／1346 並尺<br>斜めボーダー<span>紫<br><br>絹　100％<br>ロール捺染<br>製織地　中国<br>染色地　日本</span></div>
+		<div class="detailImage"><img src="img/2346.jpg" alt=""></div>
+    </li>
+</ul>
+</div>
+
+<div class="flickableControl clearFix">
+<a id="prev" class="backbtn"><img src="img/prev.png" alt="PREV" height="46"></a>
+<a id="next" class="nextbtn"><img src="img/next.png" alt="NEXT" height="46"></a>
+</div>
+<div id="thumbNail"></div>
+<div class="clear"></div>
+<div id="Footer">●実際の商品の色や柄の出方はカタログの写真と異なることがありますのでご了承ください。</div>
+
+<div id="zoomHanger"><img src="img/1321.jpg" alt=""></div>
+
+</body>
+</html>

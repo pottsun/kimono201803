@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="format-detection" content="telephone=no" />
+<title>キモノの休息。収納BOX</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="javascript/monaca.viewport.js"></script>
+<script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="javascript/loader.js"></script>
+<script type="text/javascript" src="javascript/pack2014.js"></script>
+<script type="text/javascript" src="javascript/flick_slide.js"></script>
+<script type="text/javascript">
+/*if( monaca.isIOS ){
+window.StatusBar.statusBarStyleDefault();
+};*/
+$(window).load(function() {
+    var WH = $(window).height();
+    var BH = $('body').height();
+    if(BH<WH){
+		$('body').css('height',WH-50);
+		$('#menu ul').css('height',WH);
+	}
+	
+	/*$('#menuBtn span').click(function(){
+		var Class = $(this).attr('class');
+		if(Class=='open'){
+			$(this).removeClass('open');
+			$('#menu').stop().animate({left:-250},250);
+			$('#header,#wrapper').stop().animate({left:0},250);
+		}else{
+			$(this).addClass('open');
+			$('#menu,#header,#wrapper').stop().animate({left:0},250);
+			$('#header,#wrapper').stop().animate({left:250},250);
+		}
+	});*/
+	
+});
+</script>
+</head> 
+<body>
+
+<!-- heaader -->
+<div id="header">
+	<ul>
+    	<li><a href="index.html" class="home2">ホーム</a></li>
+        <li><a href="index-h.html">きもの関連商品</a></li>
+        <li><span>キモノの休息。収納BOX</span></li>
+    </ul>
+</div>
+<!--/ heaader /-->
+
+<h2><img src="img/cate-h/h03/title.png" alt="キモノの休息。収納BOX" height="85"></h2>
+
+<div id="contHanger">
+
+	<div class="figHanger"><img src="img/cate-h/h03/image1.jpg" alt="" width="950"></div>
+
+</div>
+
+<div class="flickableControl">
+	<div id="back"><a href="index-h.html"><img src="img/prev.png" alt="PREV" height="46"></a></div>
+</div>
+<div id="Footer">●実際の商品の色や柄の出方はカタログの写真と異なることがありますのでご了承ください。</div>
+
+
+</body>
+</html>

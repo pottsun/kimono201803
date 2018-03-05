@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="format-detection" content="telephone=no" />
+<title>丸洗い</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="javascript/monaca.viewport.js"></script>
+<script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="javascript/loader.js"></script>
+<script type="text/javascript" src="javascript/pack2014.js"></script>
+<script type="text/javascript" src="javascript/flick_slide.js"></script>
+<script type="text/javascript">
+/*if( monaca.isIOS ){
+window.StatusBar.statusBarStyleDefault();
+};*/
+$(window).load(function() {
+    var WH = $(window).height();
+    var BH = $('body').height();
+    if(BH<WH){
+		$('body').css('height',WH-50);
+		$('#menu ul').css('height',WH);
+	}
+	
+	/*$('#menuBtn span').click(function(){
+		var Class = $(this).attr('class');
+		if(Class=='open'){
+			$(this).removeClass('open');
+			$('#menu').stop().animate({left:-250},250);
+			$('#header,#wrapper').stop().animate({left:0},250);
+		}else{
+			$(this).addClass('open');
+			$('#menu,#header,#wrapper').stop().animate({left:0},250);
+			$('#header,#wrapper').stop().animate({left:250},250);
+		}
+	});*/
+	
+});
+</script>
+</head> 
+<body>
+
+<!-- heaader -->
+<div id="header">
+	<ul>
+    	<li><a href="index.html" class="home2">ホーム</a></li>
+        <li><a href="index-e.html">アフターケア・ビフォア加工</a></li>
+        <li><span>丸洗い</span></li>
+    </ul>
+</div>
+<!--/ heaader /-->
+
+<h2><img src="img/cate-e/e01/title.png" alt="丸洗い" height="85"></h2>
+
+<div id="contHanger">
+
+	<p>丸洗いは、きもの全体の汚れをすっきりときれいにします。箔や刺繍、絞り商品も事前にテストして洗いますので安心です。事前に汚れやすい箇所を丁寧にブラッシングケアを行い、蒸留式のドライクリーニングをします。その後、真空乾燥をし、臭気抜きをして完成です。</p>
+    
+    <p class="style1"><span style="float:right;padding:8px;border: 3px solid #cccccc;margin-left:5px;"><strong class="heade1">丸洗いで落とせる代表的な汚れ</strong>・衿、袖口の皮脂汚れ、裾の泥汚れ<br>・付いたばかりの油性の汚れ<br>・全体のうす汚れ<br>・軽度のカビ</span>丸洗いで落ちるものは、付いたばかりのうす汚れや、油性の汚れです。残った汚れは別に修正が必要となります。油性の汚れ付着時や、シーズンの終わり、またしばらく着ない場合におすすめです。<br clear="all"></p>
+    
+    <h3>丸洗いの流れ</h3>
+    <div class="figHanger"><img src="img/cate-e/e01/biz_after_01.jpg" alt="" width="573" height="168"></div>
+<div style="width:768px;margin:15px auto;" class="Movie">
+    	<video controls autoplay width="768" height="432">
+        <source src="movie-4.mp4">
+        <p>動画を再生するには、videoタグをサポートしたブラウザが必要です。</p>
+        </video>
+    </div>
+
+</div>
+
+<div class="flickableControl">
+	<div id="back"><a href="index-e.html"><img src="img/prev.png" alt="PREV" height="46"></a></div>
+</div>
+<div id="Footer">●実際の商品の色や柄の出方はカタログの写真と異なることがありますのでご了承ください。</div>
+
+
+</body>
+</html>

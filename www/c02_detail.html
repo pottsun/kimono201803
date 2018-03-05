@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="format-detection" content="telephone=no" />
+<title>c03_detail</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<style type="text/css">
+.flickableControl{margin: 0;}
+#Footer{padding-top: 0;}
+</style>
+<script type="text/javascript" src="javascript/monaca.viewport.js"></script>
+<script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="javascript/loader.js"></script>
+<script type="text/javascript" src="javascript/pack2014.js"></script>
+<script type="text/javascript" src="javascript/flick_slide.js"></script>
+<script type="text/javascript">
+/*if( monaca.isIOS ){
+window.StatusBar.statusBarStyleDefault();
+};*/
+
+$(window).load(function() {
+    var WH = $(window).height();
+    var BH = $('body').height();
+    if(BH<WH){
+		$('body').css('height',WH-20);
+		$('#menu ul').css('height',WH);
+	}
+});
+</script>
+</head> 
+<body>
+
+<!-- heaader -->
+<div id="header">
+	<ul>
+    	<li><a href="index.html" class="home2">ホーム</a></li>
+        <li><a href="index-c.html" class="passed">女物 裏地・付属品</a></li>
+        <li><a href="c02.html">背伏</a></li>
+    </ul>
+    <div id="sampleBtn"><img src="img/sample.png" alt="サンプル申し込み"></div>
+</div>
+<!--/ heaader /-->
+
+<div id="basic" class="flickSimple detailPage">
+<ul class="detailPage">
+	<li class="clearFix" id="01">
+    	<div class="detailName">3001<br>白<span><br>絹　100％</span></div>
+		<div class="detailImage"><img src="img/3001.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="02">
+    	<div class="detailName">3002<br>ベージュ<span><br>絹　100％</span></div>
+		<div class="detailImage"><img src="img/3002.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="03">
+    	<div class="detailName">3003<br>シルバーグレー<span><br>絹　100％</span></div>
+		<div class="detailImage"><img src="img/3003.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="04">
+    	<div class="detailName">3004<br>グレー <span><br>絹　100％</span></div>
+		<div class="detailImage"><img src="img/3004.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="05">
+    	<div class="detailName">3005<br>黒<span><br>絹　100％</span></div>
+		<div class="detailImage"><img src="img/3005.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="06">
+    	<div class="detailName">3006<br>ピンク<span><br>絹　100％</span></div>
+		<div class="detailImage"><img src="img/3006.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="07">
+    	<div class="detailName">3007<br>エンジ<span><br>絹　100％</span></div>
+		<div class="detailImage"><img src="img/3007.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="08">
+    	<div class="detailName">3008<br>水<span><br>絹　100％</span></div>
+		<div class="detailImage"><img src="img/3008.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="09">
+    	<div class="detailName">3009<br>藤<span><br>絹　100％</span></div>
+		<div class="detailImage"><img src="img/3009.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="010">
+    	<div class="detailName">3010<br>利休<span><br>絹　100％</span></div>
+		<div class="detailImage"><img src="img/3010.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="011">
+    	<div class="detailName">3011<br>ブルー<span><br>絹　100％</span></div>
+		<div class="detailImage"><img src="img/3011.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="012">
+    	<div class="detailName">3012<br>紺<span><br>絹　100％</span></div>
+		<div class="detailImage"><img src="img/3012.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="013">
+    	<div class="detailName">3013<br>グリーン<span><br>絹　100％</span></div>
+		<div class="detailImage"><img src="img/3013.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="014">
+    	<div class="detailName">3014<br>茶<span><br>絹　100％</span></div>
+		<div class="detailImage"><img src="img/3014.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="015">
+    	<div class="detailName">3037<br>白<span><br>ポリエステル</span></div>
+		<div class="detailImage"><img src="img/3037.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="016">
+    	<div class="detailName">3038<br>黒<span><br>ポリエステル</span></div>
+		<div class="detailImage"><img src="img/3038.jpg" alt=""></div>
+    </li>
+</ul>
+</div>
+
+<div class="flickableControl clearFix">
+<a id="prev" class="backbtn"><img src="img/prev.png" alt="PREV" height="46"></a>
+<a id="next" class="nextbtn"><img src="img/next.png" alt="NEXT" height="46"></a>
+</div>
+<div id="thumbNail"></div>
+<div class="clear"></div>
+<div id="Footer">●実際の商品の色や柄の出方はカタログの写真と異なることがありますのでご了承ください。</div>
+
+<div id="zoomHanger"><img src="img/3001.jpg" alt=""></div>
+
+</body>
+</html>

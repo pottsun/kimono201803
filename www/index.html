@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=1024" />
+<title>きものブレイン総合カタログ</title>
+<link href="css/top.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="javascript/monaca.viewport.js"></script>
+<script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+
+var agent = navigator.userAgent;
+/*if(agent.search(/Android/) != -1 || agent.search(/iPad/) != -1 || agent.search(/iPhone/) != -1 || agent.search(/iPod/) != -1){
+    monaca.viewport({width : 1024});
+}*/
+
+var Num = Math.floor(Math.random()*4);
+var length = 0;
+var duration = 600;
+var Timer = 5000;
+var timerID;
+
+jQuery(document).ready(function(){
+    length = $('#photoHanger ul li').length;
+	imageAction();
+});
+
+function imageAction(){
+    if(Num==length){
+		Num = 0;
+		$('#photoHanger ul li').slice(Num,Num+1).css('display','block');
+		$('#photoHanger ul li').slice(Num,Num+1).animate({opacity: 1},duration);
+		$('#photoHanger ul li').slice(length-1,length).animate({opacity: 0},duration,function(){
+			$(this).css('display','none');
+		});
+	}else{
+		$('#photoHanger ul li').slice(Num,Num+1).css('display','block');
+		$('#photoHanger ul li').slice(Num,Num+1).animate({opacity: 1},duration);
+		$('#photoHanger ul li').slice(Num-1,Num).animate({opacity: 0},duration,function(){
+			$(this).css('display','none');
+		});
+	}
+	
+	Num++;
+	
+	timerID = setTimeout('imageAction()', Timer);
+}
+
+</script>
+</head>
+
+<body>
+
+<div id="Wrapper">
+
+    <h1><img src="img/index/logo.png" alt="" width="214"/></h1>
+    <div id="photoHanger">
+        <ul>
+        	<li><img src="img/index/image1.jpg" width="1024" height="748"/></li>
+            <li><img src="img/index/image2.jpg" width="1024" height="748"/></li>
+            <li><img src="img/index/image3.jpg" width="1024" height="748"/></li>
+            <li><img src="img/index/image4.jpg" width="1024" height="748"/></li>
+        </ul>
+    </div>
+
+    <div id="NaviHanger"><a href="index-a.html"><img src="img/index/navi1_1.png" alt="ふるるん"></a><br><a href="index-c.html"><img src="img/index/navi1_3.png" alt="女物 裏地・付属品"></a><br><a href="index-d.html"><img src="img/index/navi1_4.png" alt="男物 裏地・付属品・襦袢"></a><br><br><a href="index-e.html"><img src="img/index/navi1_5.png" alt="アフターケア・ビフォア加工"></a><br><a href="index-f.html"><img src="img/index/navi1_6.png" alt="仕立て"></a><br>
+      <a href="index-g.html"><img src="img/index/navi1_7.png" alt="リメイク"></a><br>
+      <a href="index-h.html"><img src="img/index/navi1_8.png" alt="きもの関連商品"></a><br>
+  <a href="index-i.html"><img src="img/index/navi1_9.png" alt="RAKURA"></a></div>
+    
+    <div id="appLinks">Webサイト・iOS・Androidでご覧いただけます。<br><img src="img/index/bnr_appstore.png" alt="App Store"><img src="img/index/bnr_googleplay.png" alt="Google play"></div>
+    
+    <div id="Copyright"><a href="copyright.html">&gt;&gt;著作権について</a></div>
+    
+    <div id="Ver">ver 2018.03.01</div>
+
+</div>
+<!--ver 20130401-->
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="format-detection" content="telephone=no" />
+<title>染み抜き</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="javascript/monaca.viewport.js"></script>
+<script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="javascript/loader.js"></script>
+<script type="text/javascript" src="javascript/pack2014.js"></script>
+<script type="text/javascript" src="javascript/flick_slide.js"></script>
+<script type="text/javascript">
+/*if( monaca.isIOS ){
+window.StatusBar.statusBarStyleDefault();
+};*/
+$(window).load(function() {
+    var WH = $(window).height();
+    var BH = $('body').height();
+    if(BH<WH){
+		$('body').css('height',WH-50);
+		$('#menu ul').css('height',WH);
+	}
+	
+	/*$('#menuBtn span').click(function(){
+		var Class = $(this).attr('class');
+		if(Class=='open'){
+			$(this).removeClass('open');
+			$('#menu').stop().animate({left:-250},250);
+			$('#header,#wrapper').stop().animate({left:0},250);
+		}else{
+			$(this).addClass('open');
+			$('#menu,#header,#wrapper').stop().animate({left:0},250);
+			$('#header,#wrapper').stop().animate({left:250},250);
+		}
+	});*/
+	
+});
+</script>
+
+</head> 
+<body>
+
+<!-- heaader -->
+<div id="header">
+	<ul>
+    	<li><a href="index.html" class="home2">ホーム</a></li>
+        <li><a href="index-e.html">アフターケア・ビフォア加工</a></li>
+        <li><span>染み抜き</span></li>
+    </ul>
+</div>
+<!--/ heaader /-->
+
+<h2><img src="img/cate-e/e05/title.png" alt="染み抜き" height="85"></h2>
+
+<div id="contHanger">
+
+	<p>しみや汚れといってもトラブルの原因は様々です。症状にあわせた専門的な手法で修正を行います。きものの状態を見て、着物に負担をかけない加工を施します。</p>
+    <br>
+    <p class="style1" style="padding:8px;border: 3px solid #cccccc"><strong class="heade1">こんな時には、こんな修正を。</strong>・食事の時にシミをつけてしまった・・・<strong>染み抜き</strong><br>・古いきものの金彩がはがれた・・・<strong>箔直し</strong><br>・直射日光で色が褪せた・・・<strong>ヤケ直し</strong><br>・帯を締める胴回りや膝の辺りのスレ・・・<strong>スレ直し</strong><br>・湿気を帯びたままタンス保管でカビが発生・・・<strong>カビ落とし</strong><br>・紋の色が薄れたときは・・・<strong>紋直し</strong><br>・刺繍がほつれたとき・・・<strong>刺繍直し</strong></p>
+    
+    <br>
+    
+    <h3>染み抜きの流れ</h3>
+    <div style="width:768px;margin:15px auto;" class="Movie">
+    	<video controls autoplay width="768" height="432">
+        <source src="movie-5.mp4">
+        <p>動画を再生するには、videoタグをサポートしたブラウザが必要です。</p>
+        </video>
+    </div>
+    
+    <br>
+    <h3>■泥汚れ</h3>
+    <div class="figHanger"><img src="img/cate-e/e05/image1.jpg" alt="" width="900"></div>
+    <br>
+    <h3>■油汚れ</h3>
+    <div class="figHanger"><img src="img/cate-e/e05/image2.jpg" alt="" width="900"></div>
+    <br>
+    <h3>■タンパク汚れ</h3>
+    <div class="figHanger"><img src="img/cate-e/e05/image3.jpg" alt="" width="900"></div>
+
+</div>
+
+<div class="flickableControl">
+	<div id="back"><a href="index-e.html"><img src="img/prev.png" alt="PREV" height="46"></a></div>
+</div>
+<div id="Footer">●実際の商品の色や柄の出方はカタログの写真と異なることがありますのでご了承ください。</div>
+
+
+</body>
+</html>

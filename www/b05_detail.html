@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="format-detection" content="telephone=no" />
+<title>b05_detail</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<style type="text/css">
+.flickableControl{margin: 0;}
+#Footer{padding-top: 0;}
+</style>
+<script type="text/javascript" src="javascript/monaca.viewport.js"></script>
+<script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="javascript/loader.js"></script>
+<script type="text/javascript" src="javascript/pack2014.js"></script>
+<script type="text/javascript" src="javascript/flick_slide.js"></script>
+<script type="text/javascript">
+/*if( monaca.isIOS ){
+window.StatusBar.statusBarStyleDefault();
+};*/
+
+$(window).load(function() {
+    var WH = $(window).height();
+    var BH = $('body').height();
+    if(BH<WH){
+		$('body').css('height',WH-20);
+		$('#menu ul').css('height',WH);
+	}
+	
+	$('body').append('<div id="closeBtn"><img src="img/close.gif"></div>');
+	
+	$('.detailImage img').click(function(){
+		var URL = $(this).attr('src');
+		$('#zoomHanger img').attr('src',URL);
+		$('#zoomHanger,#closeBtn').css('display','block');
+	});	
+	$('#zoomHanger,#closeBtn').click(function(){
+		$('#zoomHanger,#closeBtn').css('display','none');
+	});
+});
+</script>
+</head> 
+<body>
+
+<!-- heaader -->
+<div id="header">
+	<ul>
+    	<li><a href="index.html" class="home2">ホーム</a></li>
+        <li><a href="index-b.html" class="passed">ふるるん きもの</a></li>
+        <li><a href="b05.html">斎藤三才シリーズ・紗</a></li>
+    </ul>
+    <div id="sampleBtn"><img src="img/sample.png" alt="サンプル申し込み"></div>
+</div>
+<!--/ heaader /-->
+
+<div id="basic" class="flickSimple detailPage">
+<ul class="detailPage">
+	<li class="clearFix" id="01">
+    	<div class="detailName">KSI10-1<br>綾市松<br>MIXぼかし<span>赤×黄<br><br>絹　100％<br>手ぼかし染/他<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/KSI10-1.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="02">
+    	<div class="detailName">KSI10-2<br>綾市松<br>MIXぼかし<span>緑×青<br><br>絹　100％<br>手ぼかし染/他<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/KSI10-2.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="03">
+    	<div class="detailName">KSI10-3<br>綾市松<br>MIXぼかし<span>青×紫<br><br>絹　100％<br>手ぼかし染/他<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/KSI10-3.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="04">
+    	<div class="detailName">KSI10-4<br>綾市松<br>MIXぼかし<span>紫×黄<br><br>絹　100％<br>手ぼかし染/他<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/KSI10-4.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="05">
+    	<div class="detailName">KSI10-5<br>綾市松<br>MIXぼかし<span>薄水色×薄緑<br><br>絹　100％<br>手ぼかし染/他<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/KSI10-5.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="06">
+    	<div class="detailName">KSI10-6<br>綾市松<br>MIXぼかし<span>紫×ピンク<br><br>絹　100％<br>手ぼかし染/他<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/KSI10-6.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="07">
+    	<div class="detailName">KSI10-7<br>綾市松<br>MIXぼかし<span>グレー<br><br>絹　100％<br>手ぼかし染/他<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/KSI10-7.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="08">
+    	<div class="detailName">KSI10-8<br>綾市松<br>MIXぼかし<span>こげ茶<br><br>絹　100％<br>手ぼかし染/他<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/KSI10-8.jpg" alt=""></div>
+    </li>
+    <li class="clearFix" id="09">
+    	<div class="detailName">KSI10-9<br>綾市松<br>MIXぼかし<span>クリーム<br><br>絹　100％<br>手ぼかし染/他<br>製織地　日本<br>染色地　日本<br><br><img src="img/zoom.gif" alt=""></span></div>
+		<div class="detailImage"><img src="img/KSI10-9.jpg" alt=""></div>
+    </li>
+</ul>
+</div>
+
+<div class="flickableControl clearFix">
+<a id="prev" class="backbtn"><img src="img/prev.png" alt="PREV" height="46"></a>
+<a id="next" class="nextbtn"><img src="img/next.png" alt="NEXT" height="46"></a>
+</div>
+<div id="thumbNail"></div>
+<div class="clear"></div>
+<div id="Footer">●実際の商品の色や柄の出方はカタログの写真と異なることがありますのでご了承ください。</div>
+
+<div id="zoomHanger"><img src="img/70020088.jpg" alt=""></div>
+
+</body>
+</html>
